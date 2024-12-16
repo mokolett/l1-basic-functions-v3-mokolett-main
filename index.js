@@ -1,5 +1,7 @@
 export const getRemainder = (a, b) => a % b;
 
+console.log(getRemainder(13, 2));
+
 export const getLongestString = (a, b) => {
     if (a.length === b.length) {
         return a;
@@ -12,11 +14,14 @@ export const getLongestString = (a, b) => {
     }
 };
 
+console.log(getLongestString('uhduehdhdkj', 'fhdfgg'));
+
 export const concatStrings = (a, b, i) => {
     if (i < 0 || i > a.length) {
         return a + b;
     }
-    
+
+
     return a.slice(0, i) + b + a.slice(i);
 };
 
